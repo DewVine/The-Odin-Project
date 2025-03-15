@@ -4,6 +4,14 @@
 ### Features
 
 * add index.html for navigating through odin progress ([ac22b70](https://github.com/DewVine/The-Odin-Project/commit/ac22b7045885c510c359995fec1e5e3eb4e0f03a))
+
+
+#  (2025-03-15)
+
+
+### Features
+
+* add index.html for navigating through odin progress ([ac22b70](https://github.com/DewVine/The-Odin-Project/commit/ac22b7045885c510c359995fec1e5e3eb4e0f03a))
 * add new css-exercises with TOP completed exercises ([6356366](https://github.com/DewVine/The-Odin-Project/commit/63563668b50726b4a9cfeef624dacb81fb877e61))
 
 
