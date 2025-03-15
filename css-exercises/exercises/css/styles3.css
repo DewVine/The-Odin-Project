@@ -1,0 +1,16 @@
+/*Styling for exercise 3*/
+
+.b_first, .b_second {
+    font-size: 28px;
+    font-family: 'Helvetica', 'Times New Roman', 'sans-serif';
+}
+
+.b_first {
+    background-color: black;
+    color: white;
+}
+
+.b_second {
+    background-color: yellow;
+
+}
