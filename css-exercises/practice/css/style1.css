@@ -1,0 +1,98 @@
+/* CSS styles */
+
+  * {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    color: grey;
+  }
+
+  a:hover {
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  body {
+    margin: 5px;
+  }
+  
+  div {
+    padding: 20px;
+    background-color: #90EE90;
+    border: 3px solid green; 
+  }
+  
+  .zero {
+    padding: 5px;
+  }
+  
+  .one {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background-color: #87bdd8;
+    border: 3px solid blue;
+    gap: 5px;
+    height: 100px;
+  }
+  
+  .two {
+    flex: 1;
+    display: flex;
+    background-color: #dac292;
+    border: 3px solid #b9936c; 
+  }
+  
+  .three {
+    flex: 1;
+    background-color: pink;
+    border: 3px solid red; 
+  }
+  
+  .two.sp1 {
+    padding: 5px;
+  }
+  
+  .one.sp2 {
+    padding: 0;
+    border: none;
+    background-color: #90EE90;
+    gap: 5px;
+    height: 150px;
+  }
+  
+  .two.sp2 {
+    padding: 0;
+    display: block;
+    margin: 0px;
+    background-color: #eea29a;
+    border: 3px solid #c94c4c; 
+  }
+  
+  .two.sp2.sp3 {
+    border: none;
+    background-color: #90EE90;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .three.sp3 {
+    background-color: #eea29a;
+    border: 3px solid #c94c4c; 
+  }
+  
+  .sp4 {
+    flex: 0.2;
+  }
+
+  .sp5 {
+    background-color: #b597d5;
+    border: 3px solid rgb(73, 0, 147); 
+  }
+        
