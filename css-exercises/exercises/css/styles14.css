@@ -11,6 +11,10 @@ body {
     flex-direction: column;
   }
   
+  .index {
+    color: black;
+  }
+
   .header {
     height: 72px;
     background: darkmagenta;
