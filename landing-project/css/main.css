@@ -22,7 +22,7 @@ a {
 ul, body, .nav, .main, 
 .footer, .three, .two, 
 .header, .illustrations, 
-.one-two, .one-one, .image {
+.one-two, .one-one, .image, .four {
     display: flex;
 }
 
@@ -36,7 +36,7 @@ body {
 
 p {
     color: lightgray;
-    font-size: small;
+    font-size: 18px;
 }
 
 button {
@@ -66,12 +66,12 @@ button {
 }
 
 .header-logo {
-    font-size: large;
+    font-size: 24px;
 }
 
 .one-one {
     gap: 5px;
-    width: 25%;
+    width: 30%;
     padding-right: 50px;
 }
 
@@ -118,13 +118,14 @@ button {
 .image p {
     color: gray;
     font-size: small;
+    width: 125px;
 }
 
 .true-image {
     border: 3px solid rgb(1, 145, 255);
     border-radius: 10px;
-    width: 100%;
-    padding: 55px 0px;
+    width: auto;
+    padding: 55px 55px;
 }
 
 .three {
@@ -141,7 +142,9 @@ button {
 
 h4 {
     font-weight: lighter;
-    font-size: xx-large;
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
 }
 
 h6 {
@@ -150,5 +153,22 @@ h6 {
 }
 
 .four {
+    background-color: #3882F6;
+    padding: 30px 20px;;
+    border-radius: 5px;
+    margin: 40px 0px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
 
+.four-one h1{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.four-two button {
+    border: 1px solid white;
 }
