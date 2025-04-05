@@ -101,17 +101,11 @@ function startGame() {
 
     // game must be 5 rounds
     for (let rounds=0; rounds<5; rounds++) {
-        // ask user input
         userChoice = userInput();
-
-        // get compChoice
         compChoice = compInput();
-
-        // give result
         gameLogic(userChoice, compChoice, userWin, compWin, ties);
     }
-
-    // give final result
+    
     gameResult(userWin, compWin, ties);
 }
 
