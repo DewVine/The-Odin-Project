@@ -3,6 +3,9 @@ const repeatString = function(string, num) {
     for(let i=0;i<num;i++) {
         output += string;
     }
+    if(num < 0) {
+        return 'ERROR';
+    }
     return output;
 };
 
