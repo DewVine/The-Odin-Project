@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors Game</title>
-    <script src="game.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="game.js" defer></script>
 </head>
+
 <body>
     <a href="../index.html">Return to exercises</a>
+
+    <section class="info">
+    <h1>Rock, Paper, Scissors</h1>
+    <h2>The aim of the game is to beat your opponent.</h2>
+    <h2>Rock Beat Scissors, Paper Beats Rock, and Scissors beats Paper.</h2>
+    <h2>There will be five rounds in total!</h2>
+    </section>
+    
+    <section class="scoreboard">
+        <p class="rounds">Round: 0</p>
+        <p class="score">Players Wins: 0 - Computer Wins: 0 - Ties: 0</p>
+    </section>
+
+    <section class="round-result">
+        <p class="result">Result: </p>
+    </section>
+
+    <section class="controls">
+        <p>Make Your Choice:</p>
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissor">Scissors</button>
+    </section>
+
 </body>
 </html>
