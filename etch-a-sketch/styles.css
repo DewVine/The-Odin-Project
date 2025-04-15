@@ -27,7 +27,7 @@ button {
 }
 
 div {
-    border: 1px solid black;
+    border: 1px solid grey;
     user-select: none;
     outline: none;
 }
@@ -39,7 +39,6 @@ div {
 }
 
 .gridContainer > div {
-    display: flex;            /* make it a flex container */
     flex-direction: column;
 }
 
@@ -47,6 +46,3 @@ div {
     padding: 10px;
 }
 
-.gridContainer > div > div:hover {
-    background-color: lightgray;
-}
