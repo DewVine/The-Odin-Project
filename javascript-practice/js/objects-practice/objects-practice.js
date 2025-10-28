@@ -97,3 +97,20 @@ alert(arr[0].name); // John
 alert(arr[1].name); // Mary
 alert(arr[2].name); // Pete
 */
+
+function getAverageAge(arr) {
+    let ages = arr.map((x) => x.age); 
+    let averageAge = 0;
+    for(let i=0; i<ages.length; i++) {
+        averageAge += ages[i];
+    }
+    return averageAge/ages.length;
+}
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 29 };
+
+let arr = [ john, pete, mary ];
+
+alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
