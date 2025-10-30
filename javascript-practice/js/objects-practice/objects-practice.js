@@ -98,6 +98,10 @@ alert(arr[1].name); // Mary
 alert(arr[2].name); // Pete
 */
 
+/*
+// Get Average Age
+
+// first try
 function getAverageAge(arr) {
     let ages = arr.map((x) => x.age); 
     let averageAge = 0;
@@ -107,6 +111,17 @@ function getAverageAge(arr) {
     return averageAge/ages.length;
 }
 
+// second try
+function getAverageAge(arr) {
+    const initialValue = 0;
+    return arr.reduce(
+        (sum, user) => sum + user.age, initialValue,
+    )/arr.length;
+}
+
+// user.age is added to sum, which starts at initialValue,
+// and after iterating through the entire array, reduce() returns the total.
+
 let john = { name: "John", age: 25 };
 let pete = { name: "Pete", age: 30 };
 let mary = { name: "Mary", age: 29 };
@@ -114,3 +129,25 @@ let mary = { name: "Mary", age: 29 };
 let arr = [ john, pete, mary ];
 
 alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
+
+*/
+
+// Create keyed object from array
+
+let users = [
+  {id: 'john', name: "John Smith", age: 20},
+  {id: 'ann', name: "Ann Smith", age: 24},
+  {id: 'pete', name: "Pete Peterson", age: 31},
+];
+
+let usersById = groupById(users);
+
+/*
+// after the call we should have:
+
+usersById = {
+  john: {id: 'john', name: "John Smith", age: 20},
+  ann: {id: 'ann', name: "Ann Smith", age: 24},
+  pete: {id: 'pete', name: "Pete Peterson", age: 31},
+}
+*/
