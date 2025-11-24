@@ -140,7 +140,23 @@ let users = [
   {id: 'pete', name: "Pete Peterson", age: 31},
 ];
 
+function parseUserArray(item) {
+    let newObj = {};
+    newObj[item.id] = item;
+    return newObj;
+}
+
+function groupById(users) {
+    let userList = {}
+    for (let i=0; i<users.length; i++) {
+        Object.assign(userList, parseUserArray(users[i]))
+    }
+    return(userList)
+}
+
+
 let usersById = groupById(users);
+console.log(usersById)
 
 /*
 // after the call we should have:
