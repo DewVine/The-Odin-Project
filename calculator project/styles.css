@@ -1,0 +1,186 @@
+:root {
+    --primary-color: #272829;
+    --secondary-color: #61677A;
+    --tertiary-color: #D8D9DA;
+    --quarterly-color: #FFF6E0;
+    --base-color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding-top: 40px;
+}
+
+html, body, #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    gap: 20px;
+}
+
+#content {
+    width: 50dvh;
+    height: 70dvh;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#header {
+    height: 32px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    font-family: "Lucida Console";
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 104px;
+    height: 3px;
+    background: #888888;
+    top: 26px;
+}
+
+/* Calculator */
+
+#calculator {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: #8d919415;
+}
+
+/* Display */
+
+#display {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+    border-radius: 8px;
+    box-shadow: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: 4px 4px #888888;
+}
+
+#input, #result {
+    height: 8dvh;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    font-family: "Lucida Console";
+    color: var(--primary-color);
+}
+
+#input {
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    font-size: medium;
+}
+#display {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+    border-radius: 8px;
+    box-shadow: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: 4px 4px #888888;
+}
+
+#input, #result {
+    height: 8dvh;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    font-family: "Lucida Console";
+    color: var(--primary-color);
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+#input {
+    font-size: medium;
+}
+
+#result {
+    width: 100%;
+    align-self: flex-end;    
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* Buttons */
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: var(--tertiary-color);
+    font-family: "Lucida Console";
+    color: var(--primary-color);
+    box-shadow: 4px 4px #888888;
+}
+
+button:hover {
+    display: inline-block;
+    transform: translateY(1px);
+}
+
+.controls {
+    background-color: var(--secondary-color);
+    color: var(--quarterly-color);
+}
+
+.edge {
+    background-color: var(--primary-color);
+    color: var(--quarterly-color);
+}
+
+.edge:hover {
+    color: var(--tertiary-color);
+}
